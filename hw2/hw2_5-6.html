@@ -1,0 +1,54 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+    // 5.
+    {
+        let arg1
+        let arg2
+        let outcome
+
+        function summ(arg1, arg2) {
+            outcome = arg1 + arg2
+            return outcome
+        }
+
+        function sub(arg1, arg2) {
+            outcome = arg1 - arg2
+            return outcome
+        }
+
+        function mult(arg1, arg2) {
+            outcome = arg1 * arg2
+            return outcome
+        }
+
+        function div(arg1, arg2) {
+            outcome = arg1 / arg2
+            return outcome
+        }
+
+        // 6.
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case 'summ':
+                    return (summ(arg1, arg2));
+                    break;
+                case 'sub':
+                    return (sub(arg1, arg2));
+                    break;
+                case 'mult':
+                    return (mult(arg1, arg2));
+                    break;
+                case 'div':
+                    return (div(arg1, arg2));
+                    break;
+                default: 'enter summ, sub, mult or div';
+            }
+        }
+
+        let userOperation = prompt('enter an operation: summ, sub, mult or div:')
+        console.log(userOperation)
+        console.log(mathOperation(7, 3, userOperation))
+    }
+
+</script>
