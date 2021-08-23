@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+    // 2.
+    {
+        let basket = [['skirt', 50, 1], ['shirt', 20, 3], ['jeans', 35, 2], ['top', 17, 4], ['bag', 2, 127]];
+        let basketPrice = 0;
+        function countBasketPrice() {
+            for (let i = 0; i < basket.length; i++) {
+                let itemTotalPrice = basket[i][1] * basket[i][2];
+                basketPrice += itemTotalPrice;
+            }
+            console.log(basketPrice);
+        }
+        countBasketPrice();
+    }
+</script>
