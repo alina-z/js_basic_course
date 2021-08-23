@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+    // 1.
+    {
+        let i = 1;
+        while (i < 100) {
+            let prove = true;
+            for (j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    prove = false;
+                    break;
+                }
+            }
+            if (prove) {
+                console.log(i);
+            }
+            i++
+        }
+    }
+</script>
