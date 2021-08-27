@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+    // 2.
+    {
+        const basket = {
+            content: [{
+                productType: 'skirt',
+                price: 50,
+                quantity: 1
+            },
+            {
+                productType: 'top',
+                price: 17,
+                quantity: 4
+            },
+            {
+                productType: 'bag',
+                price: 127,
+                quantity: 2
+            }],
+            countBasketPrice() {
+                return this.content.reduce((basketPrice, item) => basketPrice + item.price * item.quantity, 0);
+            }
+        }
+
+        console.log(basket.countBasketPrice());
+    }
+
+</script>
