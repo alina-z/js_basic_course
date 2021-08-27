@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+    // 1.
+    {
+        let userNumber = prompt('Please enter any number between 0 and 999')
+
+        function divideToDigits(number) {
+            if (number < 0 || number > 999) {
+                console.log('Please enter any number between 0 and 999');
+                return {};
+            }
+
+            return {
+                units: number % 10,
+                tens: Math.floor(number / 10 % 10),
+                hundreds: Math.floor(number / 100)
+            }
+        }
+
+        console.log(divideToDigits(userNumber));
+    }
+</script>
